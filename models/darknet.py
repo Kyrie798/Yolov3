@@ -48,3 +48,7 @@ class Darknet(nn.Module):
         output4 = self.residual_block4(output3)
         output5 = self.residual_block5(output4)
         return output3, output4, output5
+
+def darknet53():
+    model = Darknet()
+    return model
